@@ -13,6 +13,12 @@
 		AA7827262AA0420A00481C8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7827242AA0420A00481C8A /* Main.storyboard */; };
 		AA7827282AA0420F00481C8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7827272AA0420F00481C8A /* Assets.xcassets */; };
 		AA78272B2AA0420F00481C8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7827292AA0420F00481C8A /* LaunchScreen.storyboard */; };
+		AA7827362AA0427100481C8A /* VistaPrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7827342AA0427100481C8A /* VistaPrincipalViewController.swift */; };
+		AA7827372AA0427100481C8A /* VistaPrincipalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7827352AA0427100481C8A /* VistaPrincipalViewController.xib */; };
+		AA78273C2AA046E000481C8A /* NumeroAleatorioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78273A2AA046E000481C8A /* NumeroAleatorioTableViewCell.swift */; };
+		AA78273D2AA046E000481C8A /* NumeroAleatorioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA78273B2AA046E000481C8A /* NumeroAleatorioTableViewCell.xib */; };
+		AA7827402AA0481D00481C8A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78273F2AA0481D00481C8A /* Extensions.swift */; };
+		AA7827422AA048ED00481C8A /* VistaPrincipalExensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7827412AA048ED00481C8A /* VistaPrincipalExensiones.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		AA7827272AA0420F00481C8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA78272A2AA0420F00481C8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA78272C2AA0420F00481C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA7827342AA0427100481C8A /* VistaPrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaPrincipalViewController.swift; sourceTree = "<group>"; };
+		AA7827352AA0427100481C8A /* VistaPrincipalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VistaPrincipalViewController.xib; sourceTree = "<group>"; };
+		AA78273A2AA046E000481C8A /* NumeroAleatorioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumeroAleatorioTableViewCell.swift; sourceTree = "<group>"; };
+		AA78273B2AA046E000481C8A /* NumeroAleatorioTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumeroAleatorioTableViewCell.xib; sourceTree = "<group>"; };
+		AA78273F2AA0481D00481C8A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AA7827412AA048ED00481C8A /* VistaPrincipalExensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaPrincipalExensiones.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,9 @@
 		AA78271D2AA0420A00481C8A /* PlayListFavoritos */ = {
 			isa = PBXGroup;
 			children = (
+				AA78273E2AA047EE00481C8A /* Commons */,
+				AA7827382AA0466500481C8A /* Cells */,
+				AA7827322AA0423E00481C8A /* Vistas */,
 				AA78271E2AA0420A00481C8A /* AppDelegate.swift */,
 				AA7827202AA0420A00481C8A /* SceneDelegate.swift */,
 				AA7827222AA0420A00481C8A /* ViewController.swift */,
@@ -65,6 +80,49 @@
 				AA78272C2AA0420F00481C8A /* Info.plist */,
 			);
 			path = PlayListFavoritos;
+			sourceTree = "<group>";
+		};
+		AA7827322AA0423E00481C8A /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				AA7827332AA0424900481C8A /* VistaPrincipal */,
+			);
+			path = Vistas;
+			sourceTree = "<group>";
+		};
+		AA7827332AA0424900481C8A /* VistaPrincipal */ = {
+			isa = PBXGroup;
+			children = (
+				AA7827342AA0427100481C8A /* VistaPrincipalViewController.swift */,
+				AA7827352AA0427100481C8A /* VistaPrincipalViewController.xib */,
+				AA7827412AA048ED00481C8A /* VistaPrincipalExensiones.swift */,
+			);
+			path = VistaPrincipal;
+			sourceTree = "<group>";
+		};
+		AA7827382AA0466500481C8A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AA7827392AA0467200481C8A /* CellNumeroAleatorio */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AA7827392AA0467200481C8A /* CellNumeroAleatorio */ = {
+			isa = PBXGroup;
+			children = (
+				AA78273A2AA046E000481C8A /* NumeroAleatorioTableViewCell.swift */,
+				AA78273B2AA046E000481C8A /* NumeroAleatorioTableViewCell.xib */,
+			);
+			path = CellNumeroAleatorio;
+			sourceTree = "<group>";
+		};
+		AA78273E2AA047EE00481C8A /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				AA78273F2AA0481D00481C8A /* Extensions.swift */,
+			);
+			path = Commons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +183,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA78273D2AA046E000481C8A /* NumeroAleatorioTableViewCell.xib in Resources */,
 				AA78272B2AA0420F00481C8A /* LaunchScreen.storyboard in Resources */,
 				AA7827282AA0420F00481C8A /* Assets.xcassets in Resources */,
+				AA7827372AA0427100481C8A /* VistaPrincipalViewController.xib in Resources */,
 				AA7827262AA0420A00481C8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +199,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7827232AA0420A00481C8A /* ViewController.swift in Sources */,
+				AA7827402AA0481D00481C8A /* Extensions.swift in Sources */,
+				AA7827362AA0427100481C8A /* VistaPrincipalViewController.swift in Sources */,
 				AA78271F2AA0420A00481C8A /* AppDelegate.swift in Sources */,
+				AA7827422AA048ED00481C8A /* VistaPrincipalExensiones.swift in Sources */,
 				AA7827212AA0420A00481C8A /* SceneDelegate.swift in Sources */,
+				AA78273C2AA046E000481C8A /* NumeroAleatorioTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +358,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +366,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MA.PlayListFavoritos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +389,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +397,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MA.PlayListFavoritos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
