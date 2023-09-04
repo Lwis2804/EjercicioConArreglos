@@ -17,23 +17,40 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Numero Aleatorio)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibw-k6-6Oa">
-                        <rect key="frame" x="12" y="12" width="296" height="56"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Numero Aleatorio)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibw-k6-6Oa">
+                        <rect key="frame" x="8" y="8" width="229" height="64"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwK-jV-Ifm">
+                        <rect key="frame" x="245" y="8" width="67" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="67" id="KUV-G7-Ck5"/>
+                            <constraint firstAttribute="height" constant="64" id="qRF-8H-dAd"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain">
+                            <attributedString key="attributedTitle">
+                                <fragment content="Button"/>
+                            </attributedString>
+                        </buttonConfiguration>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="Ibw-k6-6Oa" secondAttribute="trailing" constant="12" id="MeH-qR-nW6"/>
-                    <constraint firstAttribute="bottom" secondItem="Ibw-k6-6Oa" secondAttribute="bottom" constant="12" id="Muq-W2-UrJ"/>
-                    <constraint firstItem="Ibw-k6-6Oa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="RY1-RZ-oIN"/>
-                    <constraint firstItem="Ibw-k6-6Oa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="mF7-4M-x00"/>
+                    <constraint firstAttribute="bottom" secondItem="Ibw-k6-6Oa" secondAttribute="bottom" constant="8" id="Muq-W2-UrJ"/>
+                    <constraint firstItem="Ibw-k6-6Oa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="RY1-RZ-oIN"/>
+                    <constraint firstItem="VwK-jV-Ifm" firstAttribute="leading" secondItem="Ibw-k6-6Oa" secondAttribute="trailing" constant="8" id="bmz-gH-3U1"/>
+                    <constraint firstItem="VwK-jV-Ifm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="cOA-RK-5EC"/>
+                    <constraint firstItem="Ibw-k6-6Oa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="mF7-4M-x00"/>
+                    <constraint firstAttribute="bottom" secondItem="VwK-jV-Ifm" secondAttribute="bottom" constant="8" id="vIT-nu-PIC"/>
+                    <constraint firstAttribute="trailing" secondItem="VwK-jV-Ifm" secondAttribute="trailing" constant="8" id="vmL-6X-5Ik"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="lblNumeroAleatorioCell" destination="Ibw-k6-6Oa" id="7lf-0l-8fY"/>
+                <outlet property="starBtn" destination="VwK-jV-Ifm" id="Xt5-4f-4Sr"/>
             </connections>
             <point key="canvasLocation" x="129.7709923664122" y="-12.67605633802817"/>
         </tableViewCell>
