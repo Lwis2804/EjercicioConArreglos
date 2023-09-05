@@ -19,11 +19,14 @@ class VistaPrincipalViewController: UIViewController {
     
     var arrayArtists : [String] = ["The Beatles", "Bob Dylan", "Elvis Presley", "The Rolling Stones", "Chuck Berry", "Jimi Hendrix", "Talking Heads", "James Brown", "Little Richard", "Aretha Franklin", "Ray Charles", "Bob Marley", "The Beach Boys", "Buddy Holly", "Led Zeppelin", "Stevie Wonder", "Sam Cooke", "Muddy Waters", "Marvin Gaye", "The Velvet Underground", "Bo Diddley", "Otis Redding", "U2", "Bruce Springsteen", "Jerry Lee Lewis", "Fats Domino", "Ramones", "Prince", "The Clash", "TThe Who", "Nirvana", "Johnny Cash", "Smokey Robinson ", "The Everly Brothers", "Neil Young", "Michael Jackson", "Madonna", "Roy Orbison", "Jhon Lenon", "David Bowie","Simon and Garfunkel", "The Doors", "Van Morrison", "Sly & the Family Stone", "Public Enemy", "TThe Byrds", "Janis Joplin", "Patti Smith", "Run-DMC", "Elton John", "The Band", "Pink Floyd", "Queen", "The Allman Brothers Band", "Howlin' Wolf", "Eric Clapton", "Dr. Dre", "Grateful Dead", "Parliament/Funkadelic", "Aerosmith","Sex Pistols", "Metallica", "Joni Mitchell", "Tina Turner", "Phil Spector", "The Kinks", "Al Green", "Cream", "The Temptations", "Jackie Wilson", "The Police", "Frank Zappa", "AC/DC", "Radiohead", "Hank Williams", "Eagles", "The Shirelles", "Beastie Boys", "The Stooges", "Four Tops","Elvis Costello", "The Drifters", "Creedence Clearwater Revival", "Eminem", "James Taylor", "Black Sabbath", "Tupac Shakur", "Gram Parsons", "Jay-Z", "The Yardbirds", "Carlos Santana", "Tom Petty", "Guns N' Roses", "Booker T. and the MGs", "Nine Inch Nails", "Lynyrd Skynyrd", "Diana Ross", "R.E.M.", "Curtis Mayfield", "Carl Perkins",]
     
-    var arrayPickArtist : [String] = []
+    
+    var arrayPickArtist : [(String , Bool)] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTablePlaylist()
+     
+      
     }
     
     func setUpTablePlaylist() {
@@ -37,12 +40,12 @@ class VistaPrincipalViewController: UIViewController {
     }
     
     func generateRandomArtist(arrayArtist: [String]) -> String {
-        return arrayArtist.randomElement()!
+        return arrayArtist.randomElement() ?? ""
     }
     
     
     @IBAction func btnAnadirNumero(_ sender: Any) {
-        arrayPickArtist.append(generateRandomArtist(arrayArtist: arrayArtists))
+        arrayPickArtist.append((generateRandomArtist(arrayArtist: arrayArtists), false))
         self.playListPpal.reloadData()
     }
     
@@ -52,7 +55,7 @@ class VistaPrincipalViewController: UIViewController {
     }
     
     @IBAction func btnEliminarTodo(_ sender: Any) {
-        arrayNumerosAleatorios.removeAll()
+        arrayPickArtist.removeAll()
         self.playListPpal.reloadData()
     }
     

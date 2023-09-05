@@ -19,6 +19,11 @@
 		AA78273D2AA046E000481C8A /* NumeroAleatorioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA78273B2AA046E000481C8A /* NumeroAleatorioTableViewCell.xib */; };
 		AA7827402AA0481D00481C8A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78273F2AA0481D00481C8A /* Extensions.swift */; };
 		AA7827422AA048ED00481C8A /* VistaPrincipalExensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7827412AA048ED00481C8A /* VistaPrincipalExensiones.swift */; };
+		AAF2B0622AA6B489000E6E94 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF2B0602AA6B489000E6E94 /* FavoritesTableViewCell.swift */; };
+		AAF2B0632AA6B489000E6E94 /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAF2B0612AA6B489000E6E94 /* FavoritesTableViewCell.xib */; };
+		AAF2B0672AA6B4E6000E6E94 /* FavoritsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF2B0652AA6B4E6000E6E94 /* FavoritsViewController.swift */; };
+		AAF2B0682AA6B4E6000E6E94 /* FavoritsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAF2B0662AA6B4E6000E6E94 /* FavoritsViewController.xib */; };
+		AAF2B06A2AA6B4F8000E6E94 /* ExtensionsFavorits.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF2B0692AA6B4F8000E6E94 /* ExtensionsFavorits.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		AA78273B2AA046E000481C8A /* NumeroAleatorioTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumeroAleatorioTableViewCell.xib; sourceTree = "<group>"; };
 		AA78273F2AA0481D00481C8A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AA7827412AA048ED00481C8A /* VistaPrincipalExensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaPrincipalExensiones.swift; sourceTree = "<group>"; };
+		AAF2B0602AA6B489000E6E94 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		AAF2B0612AA6B489000E6E94 /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
+		AAF2B0652AA6B4E6000E6E94 /* FavoritsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritsViewController.swift; sourceTree = "<group>"; };
+		AAF2B0662AA6B4E6000E6E94 /* FavoritsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritsViewController.xib; sourceTree = "<group>"; };
+		AAF2B0692AA6B4F8000E6E94 /* ExtensionsFavorits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsFavorits.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,7 @@
 		AA7827322AA0423E00481C8A /* Vistas */ = {
 			isa = PBXGroup;
 			children = (
+				AAF2B0642AA6B4C2000E6E94 /* VistaFavoritos */,
 				AA7827332AA0424900481C8A /* VistaPrincipal */,
 			);
 			path = Vistas;
@@ -103,6 +114,7 @@
 		AA7827382AA0466500481C8A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				AAF2B05F2AA6B45F000E6E94 /* CellFavorits */,
 				AA7827392AA0467200481C8A /* CellNumeroAleatorio */,
 			);
 			path = Cells;
@@ -123,6 +135,25 @@
 				AA78273F2AA0481D00481C8A /* Extensions.swift */,
 			);
 			path = Commons;
+			sourceTree = "<group>";
+		};
+		AAF2B05F2AA6B45F000E6E94 /* CellFavorits */ = {
+			isa = PBXGroup;
+			children = (
+				AAF2B0602AA6B489000E6E94 /* FavoritesTableViewCell.swift */,
+				AAF2B0612AA6B489000E6E94 /* FavoritesTableViewCell.xib */,
+			);
+			path = CellFavorits;
+			sourceTree = "<group>";
+		};
+		AAF2B0642AA6B4C2000E6E94 /* VistaFavoritos */ = {
+			isa = PBXGroup;
+			children = (
+				AAF2B0652AA6B4E6000E6E94 /* FavoritsViewController.swift */,
+				AAF2B0662AA6B4E6000E6E94 /* FavoritsViewController.xib */,
+				AAF2B0692AA6B4F8000E6E94 /* ExtensionsFavorits.swift */,
+			);
+			path = VistaFavoritos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,8 +215,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA78273D2AA046E000481C8A /* NumeroAleatorioTableViewCell.xib in Resources */,
+				AAF2B0632AA6B489000E6E94 /* FavoritesTableViewCell.xib in Resources */,
 				AA78272B2AA0420F00481C8A /* LaunchScreen.storyboard in Resources */,
 				AA7827282AA0420F00481C8A /* Assets.xcassets in Resources */,
+				AAF2B0682AA6B4E6000E6E94 /* FavoritsViewController.xib in Resources */,
 				AA7827372AA0427100481C8A /* VistaPrincipalViewController.xib in Resources */,
 				AA7827262AA0420A00481C8A /* Main.storyboard in Resources */,
 			);
@@ -199,10 +232,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7827232AA0420A00481C8A /* ViewController.swift in Sources */,
+				AAF2B0672AA6B4E6000E6E94 /* FavoritsViewController.swift in Sources */,
 				AA7827402AA0481D00481C8A /* Extensions.swift in Sources */,
 				AA7827362AA0427100481C8A /* VistaPrincipalViewController.swift in Sources */,
 				AA78271F2AA0420A00481C8A /* AppDelegate.swift in Sources */,
+				AAF2B06A2AA6B4F8000E6E94 /* ExtensionsFavorits.swift in Sources */,
 				AA7827422AA048ED00481C8A /* VistaPrincipalExensiones.swift in Sources */,
+				AAF2B0622AA6B489000E6E94 /* FavoritesTableViewCell.swift in Sources */,
 				AA7827212AA0420A00481C8A /* SceneDelegate.swift in Sources */,
 				AA78273C2AA046E000481C8A /* NumeroAleatorioTableViewCell.swift in Sources */,
 			);

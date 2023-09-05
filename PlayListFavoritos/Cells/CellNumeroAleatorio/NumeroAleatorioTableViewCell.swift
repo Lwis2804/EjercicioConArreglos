@@ -10,8 +10,7 @@ import UIKit
 class NumeroAleatorioTableViewCell: UITableViewCell {
     
     @IBOutlet weak var lblNumeroAleatorioCell: UILabel!
-    @IBOutlet weak var starBtn: UIButton!
-    
+    @IBOutlet weak var imgArtist: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,9 +22,16 @@ class NumeroAleatorioTableViewCell: UITableViewCell {
         self.lblNumeroAleatorioCell.text = "\(numeroAleatorio)"
     }
     
-    public func setUpPickArtist(randomArtist : String) {
+    public func setUpPickArtist(randomArtist : String , andState : Bool) {
         self.lblNumeroAleatorioCell.text = "\(randomArtist)"
+        if andState {
+            imgArtist.image = UIImage(named: "yellowStar")
+        }else{
+            imgArtist.image = UIImage(named: "starEmpty")
+        }
     }
+    
+    
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
