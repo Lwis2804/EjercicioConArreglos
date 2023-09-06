@@ -14,6 +14,8 @@ class VistaPrincipalViewController: UIViewController {
     @IBOutlet weak var btnAnadir: UIButton!
     @IBOutlet weak var btnBorrar: UIButton!
     @IBOutlet weak var btnEliminarTodo: UIButton!
+    @IBOutlet weak var btnFavoritos: UIButton!
+    
     
     var arrayNumerosAleatorios : [Int] = []
     
@@ -59,7 +61,6 @@ class VistaPrincipalViewController: UIViewController {
         self.playListPpal.reloadData()
     }
     
-    
-    
+
     
 }

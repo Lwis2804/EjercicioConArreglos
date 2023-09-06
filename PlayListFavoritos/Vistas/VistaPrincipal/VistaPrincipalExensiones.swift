@@ -27,6 +27,20 @@ extension VistaPrincipalViewController: UITableViewDataSource & UITableViewDeleg
     }
     
     
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return.delete
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt IndexPath : IndexPath) {
+        if editingStyle == .delete {
+           // tableView.beginUpdates()
+            arrayPickArtist.remove(at: IndexPath.row)
+            tableView.deleteRows(at: [IndexPath], with: .fade)
+          //  tableView.endUpdates()
+            self.playListPpal.reloadData()
+        }
+    }
+    
 }
 
 

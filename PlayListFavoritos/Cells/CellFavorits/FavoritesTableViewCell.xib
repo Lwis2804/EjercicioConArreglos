@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,21 +19,42 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Title favorits)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ye-kQ-St5">
-                        <rect key="frame" x="8" y="8" width="304" height="44"/>
+                        <rect key="frame" x="8" y="8" width="252" height="44"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suit.heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1DF-lT-jfe">
+                        <rect key="frame" x="268" y="10" width="44" height="41"/>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Xre-fV-ODV"/>
+                            <constraint firstAttribute="width" constant="44" id="e3b-a6-UIa"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="6Ye-kQ-St5" secondAttribute="trailing" constant="8" id="JCO-Z8-o8D"/>
+                    <constraint firstAttribute="bottom" secondItem="1DF-lT-jfe" secondAttribute="bottom" constant="8" id="5nh-nn-HNe"/>
+                    <constraint firstItem="1DF-lT-jfe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Zs3-n2-hPk"/>
                     <constraint firstAttribute="bottom" secondItem="6Ye-kQ-St5" secondAttribute="bottom" constant="8" id="bCP-Dg-Vug"/>
+                    <constraint firstAttribute="trailing" secondItem="1DF-lT-jfe" secondAttribute="trailing" constant="8" id="dEj-In-xpS"/>
                     <constraint firstItem="6Ye-kQ-St5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="n9q-qd-uow"/>
                     <constraint firstItem="6Ye-kQ-St5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="rgz-eZ-AO5"/>
+                    <constraint firstItem="1DF-lT-jfe" firstAttribute="leading" secondItem="6Ye-kQ-St5" secondAttribute="trailing" constant="8" id="xUj-cq-ZZo"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="131" y="-12"/>
+            <connections>
+                <outlet property="favoriteArtistHeart" destination="1DF-lT-jfe" id="bvr-nU-GTM"/>
+                <outlet property="favoritesArtistLbl" destination="6Ye-kQ-St5" id="DF2-Hl-Qs8"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="-12.67605633802817"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="suit.heart" catalog="system" width="128" height="107"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

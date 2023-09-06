@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoritsViewController" customModule="PlayListFavoritos" customModuleProvider="target">
             <connections>
+                <outlet property="tableFavorits" destination="uOJ-gg-YSZ" id="H8D-c8-AGr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -32,7 +33,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uOJ-gg-YSZ" secondAttribute="trailing" constant="20" id="cfk-Et-SUG"/>
                 <constraint firstItem="uOJ-gg-YSZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="gd5-Pz-f4B"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="-12"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-12.67605633802817"/>
         </view>
     </objects>
     <resources>
