@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA47F6062AA9484600C8DF00 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47F6042AA9484600C8DF00 /* FavoritesViewController.swift */; };
+		AA47F6072AA9484600C8DF00 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA47F6052AA9484600C8DF00 /* FavoritesViewController.xib */; };
+		AA47F60B2AA94D1400C8DF00 /* ExtensionsFavoriteArtistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47F60A2AA94D1400C8DF00 /* ExtensionsFavoriteArtistController.swift */; };
 		AA78271F2AA0420A00481C8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78271E2AA0420A00481C8A /* AppDelegate.swift */; };
 		AA7827212AA0420A00481C8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7827202AA0420A00481C8A /* SceneDelegate.swift */; };
 		AA7827232AA0420A00481C8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7827222AA0420A00481C8A /* ViewController.swift */; };
@@ -21,12 +24,12 @@
 		AA7827422AA048ED00481C8A /* VistaPrincipalExensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7827412AA048ED00481C8A /* VistaPrincipalExensiones.swift */; };
 		AAF2B0622AA6B489000E6E94 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF2B0602AA6B489000E6E94 /* FavoritesTableViewCell.swift */; };
 		AAF2B0632AA6B489000E6E94 /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAF2B0612AA6B489000E6E94 /* FavoritesTableViewCell.xib */; };
-		AAF2B0672AA6B4E6000E6E94 /* FavoritsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF2B0652AA6B4E6000E6E94 /* FavoritsViewController.swift */; };
-		AAF2B0682AA6B4E6000E6E94 /* FavoritsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAF2B0662AA6B4E6000E6E94 /* FavoritsViewController.xib */; };
-		AAF2B06A2AA6B4F8000E6E94 /* ExtensionsFavorits.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF2B0692AA6B4F8000E6E94 /* ExtensionsFavorits.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA47F6042AA9484600C8DF00 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		AA47F6052AA9484600C8DF00 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		AA47F60A2AA94D1400C8DF00 /* ExtensionsFavoriteArtistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsFavoriteArtistController.swift; sourceTree = "<group>"; };
 		AA78271B2AA0420A00481C8A /* PlayListFavoritos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayListFavoritos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA78271E2AA0420A00481C8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA7827202AA0420A00481C8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,9 +46,6 @@
 		AA7827412AA048ED00481C8A /* VistaPrincipalExensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaPrincipalExensiones.swift; sourceTree = "<group>"; };
 		AAF2B0602AA6B489000E6E94 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		AAF2B0612AA6B489000E6E94 /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
-		AAF2B0652AA6B4E6000E6E94 /* FavoritsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritsViewController.swift; sourceTree = "<group>"; };
-		AAF2B0662AA6B4E6000E6E94 /* FavoritsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritsViewController.xib; sourceTree = "<group>"; };
-		AAF2B0692AA6B4F8000E6E94 /* ExtensionsFavorits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsFavorits.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,9 +149,9 @@
 		AAF2B0642AA6B4C2000E6E94 /* VistaFavoritos */ = {
 			isa = PBXGroup;
 			children = (
-				AAF2B0652AA6B4E6000E6E94 /* FavoritsViewController.swift */,
-				AAF2B0662AA6B4E6000E6E94 /* FavoritsViewController.xib */,
-				AAF2B0692AA6B4F8000E6E94 /* ExtensionsFavorits.swift */,
+				AA47F6042AA9484600C8DF00 /* FavoritesViewController.swift */,
+				AA47F60A2AA94D1400C8DF00 /* ExtensionsFavoriteArtistController.swift */,
+				AA47F6052AA9484600C8DF00 /* FavoritesViewController.xib */,
 			);
 			path = VistaFavoritos;
 			sourceTree = "<group>";
@@ -218,7 +218,7 @@
 				AAF2B0632AA6B489000E6E94 /* FavoritesTableViewCell.xib in Resources */,
 				AA78272B2AA0420F00481C8A /* LaunchScreen.storyboard in Resources */,
 				AA7827282AA0420F00481C8A /* Assets.xcassets in Resources */,
-				AAF2B0682AA6B4E6000E6E94 /* FavoritsViewController.xib in Resources */,
+				AA47F6072AA9484600C8DF00 /* FavoritesViewController.xib in Resources */,
 				AA7827372AA0427100481C8A /* VistaPrincipalViewController.xib in Resources */,
 				AA7827262AA0420A00481C8A /* Main.storyboard in Resources */,
 			);
@@ -232,12 +232,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7827232AA0420A00481C8A /* ViewController.swift in Sources */,
-				AAF2B0672AA6B4E6000E6E94 /* FavoritsViewController.swift in Sources */,
+				AA47F6062AA9484600C8DF00 /* FavoritesViewController.swift in Sources */,
 				AA7827402AA0481D00481C8A /* Extensions.swift in Sources */,
 				AA7827362AA0427100481C8A /* VistaPrincipalViewController.swift in Sources */,
 				AA78271F2AA0420A00481C8A /* AppDelegate.swift in Sources */,
-				AAF2B06A2AA6B4F8000E6E94 /* ExtensionsFavorits.swift in Sources */,
 				AA7827422AA048ED00481C8A /* VistaPrincipalExensiones.swift in Sources */,
+				AA47F60B2AA94D1400C8DF00 /* ExtensionsFavoriteArtistController.swift in Sources */,
 				AAF2B0622AA6B489000E6E94 /* FavoritesTableViewCell.swift in Sources */,
 				AA7827212AA0420A00481C8A /* SceneDelegate.swift in Sources */,
 				AA78273C2AA046E000481C8A /* NumeroAleatorioTableViewCell.swift in Sources */,

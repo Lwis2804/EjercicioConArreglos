@@ -14,8 +14,7 @@ class VistaPrincipalViewController: UIViewController {
     @IBOutlet weak var btnAnadir: UIButton!
     @IBOutlet weak var btnBorrar: UIButton!
     @IBOutlet weak var btnEliminarTodo: UIButton!
-    @IBOutlet weak var btnFavoritos: UIButton!
-    
+    @IBOutlet weak var btnFavoriteList: UIButton!
     
     var arrayNumerosAleatorios : [Int] = []
     
@@ -61,6 +60,7 @@ class VistaPrincipalViewController: UIViewController {
         self.playListPpal.reloadData()
     }
     
-
-    
+    @IBAction func btnGoToFavorite(_ sender: Any) {
+        let pushGoView = FavoritesViewController()
+        navigationController?.pushViewController(pushGoView, animated: true)    }
 }

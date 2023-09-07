@@ -14,7 +14,7 @@
                 <outlet property="btnAnadir" destination="VVO-20-A1W" id="RKh-XF-iCU"/>
                 <outlet property="btnBorrar" destination="hdG-5D-pDD" id="64e-Gx-0V4"/>
                 <outlet property="btnEliminarTodo" destination="RL8-Jo-wsS" id="8ey-e5-CAE"/>
-                <outlet property="btnFavoritos" destination="hlC-PU-UHn" id="mDM-cJ-Ao9"/>
+                <outlet property="btnFavoriteList" destination="9Ez-g9-MfV" id="cdw-Xv-ji1"/>
                 <outlet property="playListPpal" destination="zw0-qR-x4V" id="QnF-qS-ZtE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -66,15 +66,12 @@
                         <action selector="btnEliminarTodo:" destination="-1" eventType="touchUpInside" id="Ai1-Zt-3Lj"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlC-PU-UHn">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ez-g9-MfV">
                     <rect key="frame" x="169" y="506" width="135" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="135" id="G3x-bC-o7L"/>
-                    </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="( Favoritos)"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
                     <connections>
-                        <action selector="btnGoToFavorites:" destination="-1" eventType="touchUpInside" id="BVl-yf-9Z5"/>
+                        <action selector="btnGoToFavorite:" destination="-1" eventType="touchUpInside" id="hyy-PK-GhI"/>
                     </connections>
                 </button>
             </subviews>
@@ -84,16 +81,17 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RL8-Jo-wsS" secondAttribute="bottom" constant="12" id="8KF-S0-749"/>
                 <constraint firstItem="zw0-qR-x4V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="92K-et-LHF"/>
                 <constraint firstItem="RL8-Jo-wsS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ApW-ca-YNw"/>
+                <constraint firstItem="9Ez-g9-MfV" firstAttribute="leading" secondItem="RL8-Jo-wsS" secondAttribute="trailing" constant="18" id="Bqc-0C-CNq"/>
                 <constraint firstItem="zw0-qR-x4V" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="DWq-cx-nKV"/>
                 <constraint firstItem="VVO-20-A1W" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="FRG-sM-RkJ"/>
+                <constraint firstItem="9Ez-g9-MfV" firstAttribute="top" secondItem="hdG-5D-pDD" secondAttribute="bottom" constant="10" id="J6K-gZ-e84"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hdG-5D-pDD" secondAttribute="trailing" constant="16" id="ObR-aB-LBp"/>
                 <constraint firstItem="VVO-20-A1W" firstAttribute="top" secondItem="zw0-qR-x4V" secondAttribute="bottom" constant="10" id="PFA-mU-Mde"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hlC-PU-UHn" secondAttribute="trailing" constant="16" id="QpH-Yb-cwY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zw0-qR-x4V" secondAttribute="trailing" constant="16" id="R8R-15-IkC"/>
                 <constraint firstItem="hdG-5D-pDD" firstAttribute="top" secondItem="zw0-qR-x4V" secondAttribute="bottom" constant="10" id="UqN-SA-SIU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9Ez-g9-MfV" secondAttribute="bottom" constant="12" id="feI-uc-5fy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9Ez-g9-MfV" secondAttribute="trailing" constant="16" id="if0-AY-swg"/>
                 <constraint firstItem="RL8-Jo-wsS" firstAttribute="top" secondItem="VVO-20-A1W" secondAttribute="bottom" constant="10" id="rVH-T4-hjS"/>
-                <constraint firstItem="hlC-PU-UHn" firstAttribute="top" secondItem="hdG-5D-pDD" secondAttribute="bottom" constant="10" id="wYL-mY-gYf"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hlC-PU-UHn" secondAttribute="bottom" constant="12" id="wtD-oO-ccu"/>
             </constraints>
             <point key="canvasLocation" x="123.75" y="-7.394366197183099"/>
         </view>
