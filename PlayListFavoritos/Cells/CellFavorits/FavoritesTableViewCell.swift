@@ -22,5 +22,5 @@ class FavoritesTableViewCell: UITableViewCell {
 
     }
     
-    }
+    
 }
